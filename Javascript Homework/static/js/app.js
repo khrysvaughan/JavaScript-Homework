@@ -8,8 +8,11 @@ filterbutton.on("click", function () {
 
     d3.event.preventDefault();
 
+    d3.selectAll("tr").remove();
+
     // Get a reference to the table body
     var tbody = d3.select("tbody");
+
 
     // Getting a reference to the input element on the page
     var inputField = d3.select("#datetime");
